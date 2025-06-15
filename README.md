@@ -57,7 +57,7 @@ This project develops a multilingual system to predict the risk of early-stage d
 1.  **Overview:** Optimizing model performance through techniques like hyperparameter tuning.
 2.  **Model Evaluation:** Initial evaluation highlighted the Random Forest Classifier's strong performance.
 3.  **Refinement Techniques:** Primarily focused on hyperparameter tuning of the Random Forest using `RandomizedSearchCV` and addressing class imbalance with `RandomOverSampler`.
-4.  **Hyperparameter Tuning:** Best parameters found for Random Forest were `{'n_estimators': 1100, 'min_samples_split': 10, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 16, 'criterion': 'gini'}`, achieving a ROC AUC of approximately 0.997.
+4.  **Hyperparameter Tuning:** Best parameters found for Random Forest were `{'n_estimators': 1000, 'min_samples_split': 10, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 16, 'criterion': 'gini'}`, achieving a ROC AUC of approximately 0.997.
 5.  **Cross-Validation:** Stratified K-Fold (10 splits initially, 5 within `RandomizedSearchCV`).
 6.  **Feature Selection:** While explored, all features were used in the final tuned model.
 
